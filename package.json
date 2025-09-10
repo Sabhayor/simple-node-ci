@@ -22,8 +22,7 @@
   "start": "node index.js",
   "dev": "nodemon index.js",
   "test": "jest --runInBand",
-  "lint": "eslint .",
-  "prepare": "npm run lint"
+  "lint": "eslint ."
 }
 
 
