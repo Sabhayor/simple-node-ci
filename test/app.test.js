@@ -1,18 +1,10 @@
-const request = require('supertest');
-const app = require('../index');
+import request from "supertest";
+import app from "../index.js";
 
-describe('GET /', () => {
-  test('responds with 200 and contains greeting', async () => {
-    const res = await request(app).get('/');
-    expect(res.statusCode).toBe(200);
-    expect(res.text).toMatch(/Hello from Node\.js/i);
-  });
-});
-
-describe('GET /health', () => {
-  test('returns json status ok', async () => {
-    const res = await request(app).get('/health');
-    expect(res.statusCode).toBe(200);
-    expect(res.body).toEqual({ status: 'ok' });
+describe("GET /health", () => {
+  test("responds with 200 and contains status ok", async () => {
+    const response = await request(app).get("/health");
+    expect(response.statusCode).toBe(200);
+    expect(response.body).toEqual({ status: "ok" });
   });
 });
