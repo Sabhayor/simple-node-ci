@@ -183,7 +183,9 @@ npm run dev
 ![npm run dev](/images/npm_run_dev.png)
 ![localhost](/images/localhost.png)
 ![workflow](/images/workflow_success.png)
-![github page](/images/github_page.png)
+![github page](/images/github_page.png)  
+  
+  Github Page URL: https://sabhayor.github.io/simple-node-ci/public/
 ---
 
 ## 📚 Next steps / improvements
